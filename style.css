@@ -1,0 +1,32 @@
+.yt-cntainer {
+	position: relative;
+}
+
+.yt-mask {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.button {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  &:hover {
+    fill: white;
+  }
+}
+.defs {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+.buttons {
+  padding: 1rem;
+  background: #f06d06;
+  float: left;
+}
+body {
+  padding: 1rem;
+}
