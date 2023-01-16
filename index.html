@@ -27,10 +27,15 @@
 <div class="yt-mask"></div>
 </div>
  <button onclick = "play()">Play</button>
+ <button onclick = "stop()">Stop</button>
  <script>
  function play() {
          let video = document.getElementById("videoId")
          video.contentWindow.postMessage( '{"event":"command", "func":"playVideo", "args":""}', '*');
+      }
+ function stop() {
+         let video = document.getElementById("videoId")
+         video.contentWindow.postMessage( '{"event":"command", "func":"stopVideo", "args":""}', '*');
       }
   </script>
 </body>
