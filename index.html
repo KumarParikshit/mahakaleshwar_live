@@ -1,34 +1,30 @@
 <html>
 <head>
-<script>
-$('a.play-video').click(function(){
-  $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
-});
-
-$('a.stop-video').click(function(){
-  $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-});
-
-$('a.pause-video').click(function(){
-  $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-});
-</script>
  <!-- mobile metas -->
 
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1"> <link rel="stylesheet" href="style.css">
 </head>
+<style>
+   button {
+      height: 30px;
+      width: 80px;
+      background-color: aqua;
+   }
+</style>
 <body>
 <div class="-cntainer" style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
 
-<iframe class="youtube-video" width="100%" height="40%" src="https://www.youtube.com/embed/9GXU8Bq1AS8?enablejsapi=1&version=3&playerapiid=ytplayer" modestbranding="0"  controls="0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe id="videoId" class="youtube-video" width="100%" height="40%" src="https://www.youtube.com/embed/9GXU8Bq1AS8?enablejsapi=1&version=3&playerapiid=ytplayer" modestbranding="0"  controls="0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <div class="-mask"></div>
 </div>
-<button class="play-video" type="button" name="myButton">Play</button>
-<br>
-<button class="pause-video" type="button" name="my1Button">Pause</button>
-<br>
-<button class="stop-video" type="button" name="my2Button">Stop</button>
+ <button onclick = "play()"> Play </button>
+ <script>
+ function play() {
+         let video = document.getElementById("videoId")
+         video.contentWindow.postMessage( '{"event":"command", "func":"playVideo", "args":""}', '*');
+      }
+  </script>
 </body>
 </html>
