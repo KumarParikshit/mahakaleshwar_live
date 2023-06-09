@@ -12,7 +12,18 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
-
+button {
+			color: #ffffff;
+			background-color: #e83d0e;
+			font-size: 19px;
+			border: 1px solid #f03e16;
+			padding: 15px 50px;
+			cursor: pointer
+		}
+		button:hover {
+			color: #ed4b00;
+			background-color: #ffffff;
+		}
 a {
   color: #ff8800;
   text-decoration: none;
