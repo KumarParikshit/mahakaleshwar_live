@@ -8,6 +8,25 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+body,html{
+  margin:0;
+}
+
+.wrapper{
+  height:500px;
+  position:relative;
+  overflow:hidden;
+}
+iframe{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left:0;
+  pointer-events:none;
+  width:100vw;
+  height:56.25vw;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
