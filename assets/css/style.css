@@ -11,7 +11,10 @@
 body,html{
   margin:0;
 }
-
+.ytplayer {
+pointer-events: none;
+position: absolute;
+}
 .wrapper{
   height:500px;
   position:relative;
