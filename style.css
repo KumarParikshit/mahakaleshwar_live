@@ -1,6 +1,6 @@
 .video-container{
   width:auto;
-  
+  height:auto;
   overflow:hidden;
   position:relative;
 }
@@ -11,6 +11,7 @@
   top: 0;
   left: 0;
   width: auto;
+  height: auto;
   
 }
 
