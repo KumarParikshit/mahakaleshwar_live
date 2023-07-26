@@ -2,7 +2,7 @@ body {
 	font-family: sans-serif;
 }
 
-.youtube-container {
+.youtube {
 	overflow: hidden;
 	width: 100%;
 	/* Keep it the right aspect-ratio */
