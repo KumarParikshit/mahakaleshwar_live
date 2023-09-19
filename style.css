@@ -1,7 +1,7 @@
 
 .youtube-container {
 	overflow: hidden;
-	width: 100%;
+	width: 50%;
 	
 	aspect-ratio: 16/9;
 	
@@ -9,7 +9,7 @@
 	
 	iframe {
 		
-		width: 200%;
+		width: 300%;
 		height: 100%;
 		
 		margin-left: -100%;
