@@ -1,9 +1,10 @@
 .youtube-container {
-	
+	overflow: hidden;
 	width: 100%;
 	
 	aspect-ratio: 16/9;
-	}
+	
+	pointer-events: none;}
 iframe {
 		
 		width: 300%;
